@@ -91,6 +91,9 @@ img {
     width: 100%;
 }
 
+.noFill {
+  fill: none;
+}
 
 /* ============ GOLBAL LAYOUT ============ */
 
@@ -242,17 +245,48 @@ img {
   margin: -11px 0 0 -11px;
 }
 
+.todo__item__buttons__button svg .fill {
+
+    -webkit-transition:fill 0.2s ease;
+    -moz-transition:fill 0.2s ease;
+    -ms-transition:fill 0.2s ease;
+    -o-transition:fill 0.2s ease;
+    transition:fill 0.2s ease;
+}
+
   .button--remove svg .fill {
   fill: #C0CECB;
   }
 
-  .button--remove:hover svg .fill {
-  fill: #e85656;
+    .button--remove:hover svg .fill {
+    fill: #e85656;
+    }
+
+.button--complete svg {
+  border-radius: 11px;
+  border: 1.5px solid #25b99a;
+}
+
+#completed .button--complete svg {
+  border: none;
+  background: #25b99a;
+}
+
+.todo__item:not(#completed) .button--complete:hover svg {
+  background:rgba(37,185,154,0.5);
+}
+.todo__item:not(#completed) .button--complete:hover svg .fill {
+  fill: #fff;
+}
+
+  .button--complete svg .fill {
+  fill:#25b99a;
   }
 
-  .button--complete {
-
+  #completed .button--complete svg .fill {
+    fill: #fff;
   }
+
 
 /* ============ FOOTER ============ */
 
