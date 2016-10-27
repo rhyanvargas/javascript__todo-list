@@ -12,9 +12,10 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+
 <body>
     <header>
-        <input id="item"class="header__input-item" type="text" placeholder="Enter an activity...">
+        <input id="item" class="header__input-item" type="text" placeholder="Enter an activity...">
         <button id="add" class="header__input-item-button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
   <g>
@@ -23,12 +24,17 @@
   </g>
   </svg></button>
     </header>
+    <div class="container">
+      <!-- Incomplete Tasks -->
+        <ul class="todo">
+            <li class="todo__item">This is an item</li>
+            <li class="todo__item">This is an item</li>
+            <li class="todo__item">This is an item</li>
+        </ul>
+        <!-- Complete Tasks -->
+        <!-- <ul class="todo"></ul> -->
+    </div>
 
-    <ul class="todo">
-      <li>THis is an item</li>
-    </ul>
-
-    <!-- <ul class="todo"></ul> -->
     <!--Javascript-->
     <script src="js/main.js" charset="utf-8"></script>
 </body>
