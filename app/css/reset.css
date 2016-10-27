@@ -6,23 +6,23 @@
 
 /* ============ RESET ============ */
 
-html, body, div, span, object, iframe,
+html, body, div, span, object, iframe, input,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var,
 b, i,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
+fieldset, form, textarea, label, legend,
+table, caption, select, button , tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,keygen,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin:0;
     padding:0;
     border:0;
     outline:0;
-    font-size:16px;
+    font-size:100%;
     vertical-align:baseline;
     background:transparent;
 }
@@ -115,107 +115,3 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   }
-
-/* ============ GLOBAL TYPOGROPHY ============ */
-
-body {
-  font: 100%/1.6 'Roboto', sans-serif;
-  font-weight: 400;
-  margin: 0 auto;
-  text-align: left;
-}
-
-/* Styling links*/
-
-a {
-	color: #ee2418;
-	text-decoration:none;
-	transition: all .5s ease;
-	}
-a:visited {
-	color: #ee2418;
-	}
-
-a:hover {
-	color: #000;
-	}
-
-
-h1, h2, h3 {
-	font-weight: 900;
-	margin:0;
-	padding:0;
-	}
-
-h1 {
-	font-size: 2.5em; /*40px*/
-	line-height:1.1;
-	}
-
-
-a h3,
-a:visited h3,
-h1 a,
-h1 a:visited {
-	color: #444;
-	}
-
-a:hover h3,
-h1 a:hover {
-	color: #ee2418;
-	}
-
-h2 {
-	font-size: 1.875em; /*30px*/
-	margin-top: .5em;
-	text-transform: uppercase;
-}
-
-h3 {
-	font-size: 1.25em; /* 20px*/
-	margin: 1.5em 0 0 0;
-	line-height:1;
-	}
-
-/* ============ GOLBAL ELEMENTS ============ */
-
-/* Making images responsive */
-
-img {
-	border: 1px solid #f1f1f1;
-	height: auto;
-	margin-top: 1em;
-	width: 100%;
-	}
-
-/* ============ FOOTER ============ */
-
-.footer__heart {
-  color: red;
-}
-
-/* ============ ============  BREAKPOINTS ============  ============  ====== */
-
-/*640px*/
-
-@media only screen and (min-width: 40em)   {
-
-body {
-	max-width:58.75em; /*940px*/
-	}
-
-h1 {
-	font-size: 6.25em; /*100px*/
-	line-height: 1.15;
-	margin-bottom:.2em;
-	}
-
-h2 {
-	font-size: 2.500em; /*40px*/
-	}
-
-h3 {
-	font-size: 2.313em; /*37px*/
-	}
-
-} /* end of 640px media */
